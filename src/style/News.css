@@ -1,0 +1,35 @@
+.news {
+  background: #f4f0e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.news__title {
+  color: #000;
+  font-family: 'Noto Sans';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.24px;
+}
+
+.news__subtitle {
+  color: #000;
+  font-family: 'Noto Sans';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.24px;
+}

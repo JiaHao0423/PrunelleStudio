@@ -1,0 +1,93 @@
+.order-fragrance {
+  display: flex;
+  flex-direction: column;
+  background: #f4f0e4;
+  justify-content: center;
+  align-items: center;
+  padding-top: 42px;
+  padding-bottom: 84px;
+}
+
+.order-fragrance__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+.order-fragrance__title {
+  color: #000;
+  font-family: 'Noto Sans';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.24px;
+  margin: 0;
+}
+
+.order-fragrance__subtitle {
+  color: #000;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.16px;
+  margin: 0;
+}
+
+.order-fragrance__steps-title {
+  color: #000;
+  font-family: 'Noto Sans';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 18px;
+  margin: 0;
+  margin-top: 70px;
+  line-height: 40px;
+}
+
+.order-fragrance__steps {
+  width: 100%;
+  margin: 0;
+  margin-top: 70px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  list-style: none;
+}
+
+.order-fragrance__step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.order-fragrance__step-image {
+  width: 219px;
+  height: 312px;
+  border-radius: 20px;
+}
+
+.order-fragrance__step-text {
+  width: 276px;
+  color: #000;
+  text-align: center;
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 8px;
+  line-height: 35px;
+  margin: 0;
+  min-height: 70px;
+}
