@@ -1,37 +1,48 @@
 import '../../style/Header.css';
+import { useState, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav class="navbar">
-      <div class="navbar__brand">Prunelle Studio</div>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="#about" class="navbar__link">
-            About us
+    <nav className="navbar">
+      <button className="navbar__hamburger" onClick={toggleMenu}>
+        <FaBars />
+      </button>
+      <div className="navbar__brand">Prunelle Studio</div>
+      <ul className={`navbar__menu ${menuOpen ? 'open' : ''}`}>
+        <li className="navbar__item">
+          <a href="#about" className="navbar__link">
+            {`About us ${menuOpen ? '>' : ''}`}
           </a>
         </li>
-        <li class="navbar__item">
-          <a href="#feedback" class="navbar__link">
-            Customer feedback
+        <li className="navbar__item">
+          <a href="#feedback" className="navbar__link">
+            {`Customer feedback ${menuOpen ? '>' : ''}`}
           </a>
         </li>
-        <li class="navbar__item">
-          <a href="#order" class="navbar__link">
-            Order fragrance
+        <li className="navbar__item">
+          <a href="#order" className="navbar__link">
+            {`Order fragrance ${menuOpen ? '>' : ''}`}
           </a>
         </li>
-        <li class="navbar__item">
-          <a href="#news" class="navbar__link">
-            News
+        <li className="navbar__item">
+          <a href="#news" className="navbar__link">
+            {`News ${menuOpen ? '>' : ''}`}
           </a>
         </li>
-        <li class="navbar__item">
-          <a href="#contact" class="navbar__link">
-            Contact us
+        <li className="navbar__item">
+          <a href="#contact" className="navbar__link">
+            {`Contact us ${menuOpen ? '>' : ''}`}
           </a>
         </li>
       </ul>
-      <div class="navbar__tagline">專屬於你 獨一無二的香氣</div>
+      <div className="navbar__tagline">專屬於你 獨一無二的香氣</div>
     </nav>
   );
 };

@@ -8,9 +8,7 @@ const News = () => {
         <h2 className="news__title">News</h2>
         <p className="news__subtitle">最新消息</p>
       </header>
-      <div className="news__carousel">
-        <Carousel />
-      </div>
+      <Carousel />
     </section>
   );
 };

@@ -2,25 +2,36 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin-left: 35px;
+  box-sizing: border-box;
 }
 
 .carousel__images {
   display: flex;
   gap: 50px;
   transition: transform 0.5s ease;
+  box-sizing: border-box;
 }
 
 .carousel__image {
   transition: transform 0.5s ease;
 }
 
-.carousel__image img {
+.carousel__image--background {
   width: 340px;
   height: 414px;
   display: block;
   object-fit: cover;
   border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.carousel__image--instagram {
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  object-fit: cover;
 }
 
 .carousel__dots {
