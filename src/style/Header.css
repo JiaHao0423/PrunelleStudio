@@ -86,7 +86,7 @@
   top: 0;
   right: 0;
   width: 205px;
-  height: 300vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: flex-start;
   gap: 30px;
@@ -94,6 +94,17 @@
   padding-top: 116px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 430px) {
+  .navbar__item {
+    width: 100%;
+  }
 }
 
 .navbar__link {
@@ -108,6 +119,9 @@
 @media (max-width: 430px) {
   .navbar__link {
     color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

@@ -17,28 +17,33 @@ const Header = () => {
       <div className="navbar__brand">Prunelle Studio</div>
       <ul className={`navbar__menu ${menuOpen ? 'open' : ''}`}>
         <li className="navbar__item">
-          <a href="#about" className="navbar__link">
-            {`About us ${menuOpen ? '>' : ''}`}
+          <a href="#about" className="navbar__link" onClick={toggleMenu}>
+            About us
+            {menuOpen && <span>&gt;</span>}
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#feedback" className="navbar__link">
-            {`Customer feedback ${menuOpen ? '>' : ''}`}
+          <a href="#feedback" className="navbar__link" onClick={toggleMenu}>
+            Customer feedback
+            {menuOpen && <span>&gt;</span>}
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#order" className="navbar__link">
-            {`Order fragrance ${menuOpen ? '>' : ''}`}
+          <a href="#order" className="navbar__link" onClick={toggleMenu}>
+            Order fragrance
+            {menuOpen && <span>&gt;</span>}
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#news" className="navbar__link">
-            {`News ${menuOpen ? '>' : ''}`}
+          <a href="#news" className="navbar__link" onClick={toggleMenu}>
+            News
+            {menuOpen && <span>&gt;</span>}
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#contact" className="navbar__link">
-            {`Contact us ${menuOpen ? '>' : ''}`}
+          <a href="#contact" className="navbar__link" onClick={toggleMenu}>
+            Contact us
+            {menuOpen && <span>&gt;</span>}
           </a>
         </li>
       </ul>

@@ -11,6 +11,8 @@ const AboutUS = () => {
           <h2 className="about__title">About Us</h2>
           <h3 className="about__subtitle">品牌理念</h3>
         </div>
+        <img src={AboutImage} alt="AboutImage" className="about__image" />
+
         <p className="about__description">
           坐落台北的某個寧靜小巷弄內，期望能在這個快節奏的城市中，帶給顧客專屬的個人香氛，讓香氣成為心靈的避風港，為生活注入一絲溫暖與寧靜。
           <br />
