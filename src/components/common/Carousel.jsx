@@ -4,7 +4,7 @@ import Image1 from '../../images/News/News_image1.png';
 import Image2 from '../../images/News/News_image2.png';
 import Image3 from '../../images/News/News_image3.png';
 import Image4 from '../../images/News/News_image4.png';
-import InstagramImage from '../../images/instagram_image.png';
+import InstagramImage from '../../images/News/Instagram_image.png';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
