@@ -14,6 +14,14 @@
   gap: 36px;
 }
 
+@media (max-width: 430px) {
+  .news__header {
+    height: 29px;
+    margin-top: 33px;
+    margin-bottom: 50px;
+  }
+}
+
 .news__title {
   color: #000;
   font-family: 'Noto Sans';

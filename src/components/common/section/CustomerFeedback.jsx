@@ -43,7 +43,7 @@ const CustomerFeedback = () => {
     <section className="customer-feedback">
       <div className="customer-feedback__container">
         <div className="customer-feedback__header">
-          <h2 className="customer-feedback__title">Customer Feedback</h2>
+          <h2 className="customer-feedback__title">CustomerFeedback</h2>
         </div>
         <div className="customer-feedback__list">
           <CustomerFeedbackList />

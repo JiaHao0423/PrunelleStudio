@@ -15,13 +15,39 @@
 
 @media (max-width: 768px) {
   .carousel__images {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
     margin-bottom: 114px;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .carousel__images {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 72px;
+    justify-content: normal;
+  }
+
+  .carousel__images::-webkit-scrollbar {
+    display: none;
   }
 }
 
 .carousel__image {
   transition: transform 0.5s ease;
+}
+
+@media (max-width: 430px) {
+  .carousel__image {
+    scroll-snap-align: center;
+  }
 }
 
 .carousel__image--background {
@@ -31,6 +57,13 @@
   object-fit: cover;
   border-radius: 20px;
   flex-shrink: 0;
+}
+
+@media (max-width: 430px) {
+  .carousel__image--background {
+    width: 206px;
+    height: 251px;
+  }
 }
 
 .carousel__image--instagram {
