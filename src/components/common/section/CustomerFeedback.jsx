@@ -1,6 +1,6 @@
-import '../../style/CustomerFeedback.css';
-import AvatarImage1 from '../../images/CustomerFeedbackBack/CustomerFeedbackAvatar1.png';
-import AvatarImage2 from '../../images/CustomerFeedbackBack/CustomerFeedbackAvatar2.png';
+import '../../../style/CustomerFeedback.css';
+import AvatarImage1 from '../../../images/CustomerFeedbackBack/CustomerFeedbackAvatar1.png';
+import AvatarImage2 from '../../../images/CustomerFeedbackBack/CustomerFeedbackAvatar2.png';
 
 const FeedbackItem = ({ avatar, subtitle, text }) => (
   <article className="customer-feedback__item">

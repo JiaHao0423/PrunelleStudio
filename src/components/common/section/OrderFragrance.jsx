@@ -1,8 +1,8 @@
-import '../../style/OrderFragrance.css';
-import OrderFragranceImage1 from '../../images/OrderFragrance/OrderFragrance_image1.png';
-import OrderFragranceImage2 from '../../images/OrderFragrance/OrderFragrance_image2.png';
-import OrderFragranceImage3 from '../../images/OrderFragrance/OrderFragrance_image3.png';
-import OrderFragranceImage4 from '../../images/OrderFragrance/OrderFragrance_image4.png';
+import '../../../style/OrderFragrance.css';
+import OrderFragranceImage1 from '../../../images/OrderFragrance/OrderFragrance_image1.png';
+import OrderFragranceImage2 from '../../../images/OrderFragrance/OrderFragrance_image2.png';
+import OrderFragranceImage3 from '../../../images/OrderFragrance/OrderFragrance_image3.png';
+import OrderFragranceImage4 from '../../../images/OrderFragrance/OrderFragrance_image4.png';
 
 const steps = [
   { img: OrderFragranceImage1, text: '1. 選擇喜歡的香調' },

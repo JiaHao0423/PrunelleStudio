@@ -10,6 +10,14 @@
   gap: 50px;
   transition: transform 0.5s ease;
   box-sizing: border-box;
+  margin-left: 35px;
+}
+
+@media (max-width: 768px) {
+  .carousel__images {
+    flex-wrap: wrap;
+    margin-bottom: 114px;
+  }
 }
 
 .carousel__image {
@@ -41,6 +49,12 @@
   align-items: center;
   margin-top: 92px;
   margin-bottom: 44px;
+}
+
+@media (max-width: 768px) {
+  .carousel__dots {
+    display: none;
+  }
 }
 
 .carousel__dot {

@@ -1,5 +1,5 @@
-import AboutImage from '../../images/About_image.png';
-import '../../style/AoutUs.css';
+import AboutImage from '../../../images/About_image.png';
+import '../../../style/AoutUs.css';
 
 const AboutUS = () => {
   return (

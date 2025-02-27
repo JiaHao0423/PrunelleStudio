@@ -84,9 +84,20 @@
 
 @media (max-width: 768px) {
   .footer__map-container {
-    margin-top: 53px;
-    margin-left: 9.3%;
-    margin-right: 9.3%;
+    margin: 53px auto 0;
+    width: 100%;
+  }
+}
+
+.footer__map {
+  width: 624px;
+  height: 420px;
+  margin-right: 13vw;
+}
+
+@media (max-width: 768px) {
+  .footer__map {
+    margin: 0;
   }
 }
 
@@ -110,5 +121,11 @@
     margin: 0;
     text-align: center;
     margin-top: 99px;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer__copyright {
+    display: none;
   }
 }
