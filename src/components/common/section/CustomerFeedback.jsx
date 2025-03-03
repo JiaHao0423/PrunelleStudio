@@ -40,7 +40,7 @@ const CustomerFeedbackList = () => {
 
 const CustomerFeedback = () => {
   return (
-    <section className="customer-feedback">
+    <section className="customer-feedback" id="customer-feedback">
       <div className="customer-feedback__container">
         <div className="customer-feedback__header">
           <h2 className="customer-feedback__title">CustomerFeedback</h2>

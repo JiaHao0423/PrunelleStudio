@@ -11,7 +11,7 @@ const MapCenter = {
 
 const Footer = () => {
   return (
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__content">
         <div class="footer__contact">
           <h3 class="footer__title">•聯絡我們</h3>

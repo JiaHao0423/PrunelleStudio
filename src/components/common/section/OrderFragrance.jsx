@@ -13,7 +13,7 @@ const steps = [
 
 const OrderFragrance = () => {
   return (
-    <section class="order-fragrance">
+    <section class="order-fragrance" id="order-fragrance">
       <header class="order-fragrance__header">
         <h2 class="order-fragrance__title">Order fragrance</h2>
         <h3 class="order-fragrance__subtitle">打造專屬於你的個人香水</h3>
