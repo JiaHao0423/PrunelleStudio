@@ -4,6 +4,11 @@ import Image1 from '../../images/News/News_image1.png';
 import Image2 from '../../images/News/News_image2.png';
 import Image3 from '../../images/News/News_image3.png';
 import Image4 from '../../images/News/News_image4.png';
+import Image5 from '../../images/News/News_image4.png';
+import Image6 from '../../images/News/News_image4.png';
+import Image7 from '../../images/News/News_image4.png';
+import Image8 from '../../images/News/News_image4.png';
+import Image9 from '../../images/News/News_image4.png';
 import InstagramImage from '../../images/News/Instagram_image.png';
 
 const Carousel = () => {
@@ -12,7 +17,7 @@ const Carousel = () => {
   const handleDotClick = (index) => {
     setCurrentIndex(index);
   };
-  const slides = [Image1, Image2, Image3, Image4];
+  const slides = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9];
   return (
     <div className="carousel">
       <div className="carousel__images">

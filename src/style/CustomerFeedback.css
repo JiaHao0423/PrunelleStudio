@@ -1,16 +1,18 @@
 .customer-feedback {
   background: url(../images/CustomerFeedbackBack/CustomerFeedbackBackGround_image.png) lightgray 50% / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .customer-feedback__container {
   margin-top: 172px;
   margin-bottom: 136px;
-  margin-left: 7.6%;
-  margin-right: 5.5%;
+  width: 88%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 4%;
 }
 
 @media (max-width: 768px) {
@@ -25,10 +27,20 @@
 
 .customer-feedback__header {
   background-image: url(../images/CustomerFeedbackBack/CustomerFeedbackTitle_image.png);
-  width: 543px;
-  height: 709px;
+  width: 814.5px;
+  height: 1063.5px;
   border-radius: 147px 20px 20px 20px;
+  background-size: cover;
+  background-position: center;
 }
+
+@media (max-width: 1367px) {
+  .customer-feedback__header {
+    width: 543px;
+    height: 709px;
+  }
+}
+
 @media (max-width: 768px) {
   .customer-feedback__header {
     width: 511px;
@@ -40,15 +52,13 @@
   .customer-feedback__header {
     width: 321px;
     height: 381px;
-    background-size: cover;
-    background-position: center;
   }
 }
 
 .customer-feedback__title {
   color: #000;
   font-family: Inter;
-  font-size: 36px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -56,6 +66,13 @@
   margin: 0;
   margin-top: 39px;
   margin-left: 118px;
+  text-align: right;
+}
+
+@media (max-width: 1367px) {
+  .customer-feedback__title {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -68,10 +85,17 @@
 }
 
 .customer-feedback__list {
-  width: 483px;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 60px;
+}
+
+@media (max-width: 768px) {
+  .customer-feedback__list {
+    width: 100%;
+    margin-top: 45px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -81,7 +105,7 @@
 }
 
 .customer-feedback__item {
-  height: 444px;
+  height: 700px;
   border-radius: 20px;
   background: #d9d9d9;
   padding-left: 38px;
@@ -89,10 +113,22 @@
   padding-top: 30px;
 }
 
+@media (max-width: 1440px) {
+  .customer-feedback__item {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .customer-feedback__item {
+    height: 444px;
+  }
+}
+
 @media (max-width: 768px) {
   .customer-feedback__item {
     padding-left: 24px;
-    padding-right: 69px;
+    padding-right: 24px;
   }
 }
 
@@ -135,12 +171,26 @@
 
 .customer-feedback__stars {
   letter-spacing: 8px;
-  font-size: 24px;
+  font-size: 48px;
+}
+
+@media (max-width: 1440px) {
+  .customer-feedback__stars {
+    letter-spacing: 7px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .customer-feedback__stars {
+    letter-spacing: 6px;
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 768px) {
   .customer-feedback__stars {
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     font-size: 24px;
   }
 }
@@ -153,8 +203,22 @@
 }
 
 .customer-feedback__avatar {
-  width: 81px;
-  height: 81px;
+  width: 162px;
+  height: 162px;
+}
+
+@media (max-width: 1440px) {
+  .customer-feedback__avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .customer-feedback__avatar {
+    width: 81px;
+    height: 81px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -167,7 +231,7 @@
 .customer-feedback__subtitle {
   color: #000;
   font-family: 'Noto Sans';
-  font-size: 16px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
@@ -177,9 +241,22 @@
   margin-top: 58px;
 }
 
+@media (max-width: 1440px) {
+  .customer-feedback__subtitle {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .customer-feedback__subtitle {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .customer-feedback__subtitle {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 
@@ -197,16 +274,32 @@
 .customer-feedback__text {
   color: #000;
   font-family: 'Noto Sans';
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  font-weight: 700;
+  line-height: 50px;
   letter-spacing: 8px;
+}
+
+@media (max-width: 1440px) {
+  .customer-feedback__text {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .customer-feedback__text {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 8px;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 768px) {
   .customer-feedback__text {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 30px;
     margin-left: 44px;
     margin-bottom: 0;

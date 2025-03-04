@@ -45,9 +45,7 @@ const CustomerFeedback = () => {
         <div className="customer-feedback__header">
           <h2 className="customer-feedback__title">CustomerFeedback</h2>
         </div>
-        <div className="customer-feedback__list">
-          <CustomerFeedbackList />
-        </div>
+        <CustomerFeedbackList />
       </div>
     </section>
   );

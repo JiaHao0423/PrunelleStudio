@@ -51,12 +51,19 @@
 }
 
 .carousel__image--background {
-  width: 340px;
-  height: 414px;
+  width: 680px;
+  height: 828px;
   display: block;
   object-fit: cover;
   border-radius: 20px;
   flex-shrink: 0;
+}
+
+@media (max-width: 1367px) {
+  .carousel__image--background {
+    width: 340px;
+    height: 414px;
+  }
 }
 
 @media (max-width: 430px) {
